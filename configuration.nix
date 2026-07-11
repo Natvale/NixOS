@@ -8,7 +8,7 @@ imports =
 
 boot.loader.grub = {
   enable = true;
-  device = "nodev"; # for UEFI systems
+  device = "nodev";
   efiSupport = true;
 };
 
