@@ -10,10 +10,6 @@
       			url = "github:mangowm/mango";
       			inputs.nixpkgs.follows = "nixpkgs";
     		};
-		noctalia = {
-      			url = "github:noctalia-dev/noctalia/legacy-v4";
-      			inputs.nixpkgs.follows = "nixpkgs";
-    		};
   	};
 	
 	outputs = { self, nixpkgs, home-manager, mangowm, ...}@inputs: let
@@ -25,7 +21,6 @@
 			modules = [
 				./configuration.nix
 				inputs.mangowm.nixosModules.mango
-				./noctalia.nix
 				home-manager.nixosModules.home-manager
 				{
 					home-manager = {
