@@ -84,6 +84,7 @@ environment.systemPackages = with pkgs; [
   fuzzel
   mpd
   rmpc
+  swaybg
 ];
   
 fonts.packages = with pkgs; [
